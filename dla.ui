@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>962</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-40</y>
+      <width>1051</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="subevntanas">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-10</y>
+       <width>211</width>
+       <height>781</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(198, 213, 245);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="menu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>211</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="columnaMenu">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>201</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1000</number>
+       </property>
+       <property name="midLineWidth">
+        <number>1000</number>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="botonequipo">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+	background-color: rgb(161, 170, 198);
+	border-radius: 10px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>TU EQUIPO</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="botonentrenamiento">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+background-color: rgb(161, 170, 198);
+border-radius: 10px;
+}</string>
+          </property>
+          <property name="text">
+           <string>ENTRENAMIENTO</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="botonpredicciones">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+background-color: rgb(161, 170, 198);
+border-radius: 10px;
+}</string>
+          </property>
+          <property name="text">
+           <string>PREDICCIONES</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QFrame" name="framesuperior">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>-10</y>
+         <width>211</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frametitulo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>201</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="titulo">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>191</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Neue Haas Grotesk Text Pro Medi</family>
+           <pointsize>10</pointsize>
+           <weight>7</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>Dream League Assistant</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="framelogo">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>100</y>
+          <width>120</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="logo">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>0</y>
+           <width>91</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../../logo_dla.qrc">:/lodo_dla/foto/logo_dla-removebg-preview (3).png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="pagina_equipo">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>811</width>
+       <height>701</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>140</y>
+        <width>271</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+border: 0.5px solid #000000;
+border-radius: 5px;
+
+
+}
+QFrame:hover {
+border:  0.5px solid #567CF0; 
+ }
+
+QFrame::hover {
+border: 0.5px solid #567CF0;    
+}
+
+                            
+QFrame:focus {
+border:  0.5px solid #567CF0;     
+ }
+
+QFrame:focus-within {
+ border: 0.5px solid #567CF0;
+}
+
+ QFrame {
+ box-shadow: 5px 5px 5px 5px #888888;}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>280</y>
+        <width>651</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+border: 0.5px solid #000000;
+border-radius: 5px;
+
+
+}
+QFrame:hover {
+border:  0.5px solid #567CF0; 
+ }
+
+QFrame::hover {
+border: 0.5px solid #567CF0;    
+}
+
+                            
+QFrame:focus {
+border:  0.5px solid #567CF0;     
+ }
+
+QFrame:focus-within {
+ border: 0.5px solid #567CF0;
+}
+
+ QFrame {
+ box-shadow: 5px 5px 5px 5px #888888;
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>140</y>
+        <width>341</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+border: 0.5px solid #000000;
+border-radius: 5px;
+
+
+}
+QFrame:hover {
+border:  0.5px solid #567CF0; 
+ }
+
+QFrame::hover {
+border: 0.5px solid #567CF0;    
+}
+
+                            
+QFrame:focus {
+border:  0.5px solid #567CF0;     
+ }
+
+QFrame:focus-within {
+ border: 0.5px solid #567CF0;
+}
+
+ QFrame {
+ box-shadow: 5px 5px 5px 5px #888888;}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="framebienvenido">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>531</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="bienvenido">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>30</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Neue Haas Grotesk Text Pro Medi</family>
+         <pointsize>10</pointsize>
+         <weight>7</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+font: 57 10pt &quot;Neue Haas Grotesk Text Pro Medi&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Bienvenido/a, </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nombreUsuario">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nirmala UI</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../logo_dla.qrc"/>
+ </resources>
+ <connections/>
+</ui>
