@@ -14,53 +14,45 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(962, 688)
+        MainWindow.resize(962, 676)
         MainWindow.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.stackedWidget = QtWidgets.QStackedWidget(self.centralwidget)
-        self.stackedWidget.setGeometry(QtCore.QRect(210, 0, 791, 701))
+        self.stackedWidget.setGeometry(QtCore.QRect(210, -10, 791, 701))
+        self.stackedWidget.setStyleSheet("QFrame{\n"
+"    background-color: rgb(255, 255, 255);\n"
+"\n"
+"}")
         self.stackedWidget.setObjectName("stackedWidget")
         self.equipo_page = QtWidgets.QWidget()
         self.equipo_page.setStyleSheet("background-color: #fff\n"
 "")
         self.equipo_page.setObjectName("equipo_page")
-        self.frame_3 = QtWidgets.QFrame(self.equipo_page)
-        self.frame_3.setGeometry(QtCore.QRect(60, 160, 271, 81))
-        self.frame_3.setStyleSheet("QFrame{\n"
-"border: 0.5px solid #000000;\n"
-"border-radius: 5px;\n"
-"\n"
+        self.frame_2 = QtWidgets.QFrame(self.equipo_page)
+        self.frame_2.setGeometry(QtCore.QRect(-20, 10, 801, 701))
+        self.frame_2.setStyleSheet("background-color: rgb(225, 233, 243);")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.guardarmodeloBoton_2 = QtWidgets.QPushButton(self.frame_2)
+        self.guardarmodeloBoton_2.setGeometry(QtCore.QRect(350, 500, 131, 31))
+        self.guardarmodeloBoton_2.setStyleSheet("QPushButton{\n"
+"font:  bold 10pt \"Century Gothic\";\n"
+"background-color: rgb(241, 243, 244);\n"
 "\n"
 "}\n"
-"QFrame:hover {\n"
-"border:  0.5px solid #567CF0; \n"
-" }\n"
-"\n"
-"QFrame::hover {\n"
-"border: 0.5px solid #567CF0;    \n"
+"QPushButton:hover{    \n"
+"background-color: rgb(184, 191, 199);\n"
 "}\n"
-"\n"
-"                            \n"
-"QFrame:focus {\n"
-"border:  0.5px solid #567CF0;     \n"
-" }\n"
-"\n"
-"QFrame:focus-within {\n"
-" border: 0.5px solid #567CF0;\n"
-"}\n"
-"\n"
-" QFrame {\n"
-" box-shadow: 5px 5px 5px 5px #888888;}")
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.frame_5 = QtWidgets.QFrame(self.equipo_page)
-        self.frame_5.setGeometry(QtCore.QRect(350, 160, 341, 81))
+"")
+        self.guardarmodeloBoton_2.setObjectName("guardarmodeloBoton_2")
+        self.frame_5 = QtWidgets.QFrame(self.frame_2)
+        self.frame_5.setGeometry(QtCore.QRect(360, 160, 341, 81))
         self.frame_5.setStyleSheet("QFrame{\n"
 "border: 0.5px solid #000000;\n"
 "border-radius: 5px;\n"
-"\n"
+"background-color: rgb(255, 255, 255);\n"
 "\n"
 "}\n"
 "QFrame:hover {\n"
@@ -85,12 +77,89 @@ class Ui_MainWindow(object):
         self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
-        self.frame_4 = QtWidgets.QFrame(self.equipo_page)
-        self.frame_4.setGeometry(QtCore.QRect(50, 290, 651, 261))
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_5)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.avscoretext = QtWidgets.QLabel(self.frame_5)
+        self.avscoretext.setObjectName("avscoretext")
+        self.horizontalLayout_4.addWidget(self.avscoretext)
+        self.saldoframe = QtWidgets.QFrame(self.frame_2)
+        self.saldoframe.setGeometry(QtCore.QRect(50, 160, 261, 81))
+        self.saldoframe.setStyleSheet("QFrame{\n"
+"border: 0.5px solid #000000;\n"
+"border-radius: 5px;\n"
+"    background-color: rgb(255, 255, 255);\n"
+"\n"
+"}\n"
+"QFrame:hover {\n"
+"border:  0.5px solid #567CF0; \n"
+" }\n"
+"\n"
+"QFrame::hover {\n"
+"border: 0.5px solid #567CF0;    \n"
+"}\n"
+"\n"
+"                            \n"
+"QFrame:focus {\n"
+"border:  0.5px solid #567CF0;     \n"
+" }\n"
+"\n"
+"QFrame:focus-within {\n"
+" border: 0.5px solid #567CF0;\n"
+"}\n"
+"\n"
+" QFrame {\n"
+" box-shadow: 5px 5px 5px 5px #888888;}")
+        self.saldoframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.saldoframe.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.saldoframe.setObjectName("saldoframe")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.saldoframe)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.saldotext = QtWidgets.QLabel(self.saldoframe)
+        self.saldotext.setObjectName("saldotext")
+        self.horizontalLayout_3.addWidget(self.saldotext)
+        self.framebienvenido = QtWidgets.QFrame(self.frame_2)
+        self.framebienvenido.setGeometry(QtCore.QRect(40, 40, 451, 49))
+        self.framebienvenido.setStyleSheet("background-color: rgb(225, 233, 243);")
+        self.framebienvenido.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.framebienvenido.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.framebienvenido.setLineWidth(0)
+        self.framebienvenido.setObjectName("framebienvenido")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.framebienvenido)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.bienvenido = QtWidgets.QLabel(self.framebienvenido)
+        font = QtGui.QFont()
+        font.setFamily("Century Gothic")
+        font.setPointSize(15)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.bienvenido.setFont(font)
+        self.bienvenido.setStyleSheet("QFrame{\n"
+"    font: bold 15pt \"Century Gothic\";\n"
+"}")
+        self.bienvenido.setObjectName("bienvenido")
+        self.horizontalLayout.addWidget(self.bienvenido)
+        self.nombreUsuario = QtWidgets.QLabel(self.framebienvenido)
+        font = QtGui.QFont()
+        font.setFamily("Century Gothic")
+        font.setPointSize(15)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.nombreUsuario.setFont(font)
+        self.nombreUsuario.setStyleSheet("QFrame{\n"
+"    font: bold 15pt \"Century Gothic\";\n"
+"}")
+        self.nombreUsuario.setObjectName("nombreUsuario")
+        self.horizontalLayout.addWidget(self.nombreUsuario)
+        self.frame_4 = QtWidgets.QFrame(self.frame_2)
+        self.frame_4.setGeometry(QtCore.QRect(50, 330, 661, 261))
         self.frame_4.setStyleSheet("QFrame{\n"
 "border: 0.5px solid #000000;\n"
 "border-radius: 5px;\n"
-"\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 3px;\n"
+"  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.52);\n"
 "\n"
 "}\n"
 "QFrame:hover {\n"
@@ -117,39 +186,79 @@ class Ui_MainWindow(object):
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
-        self.framebienvenido = QtWidgets.QFrame(self.equipo_page)
-        self.framebienvenido.setGeometry(QtCore.QRect(230, 50, 208, 49))
-        self.framebienvenido.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.framebienvenido.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.framebienvenido.setObjectName("framebienvenido")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.framebienvenido)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.bienvenido = QtWidgets.QLabel(self.framebienvenido)
+        self.bienvenido_3 = QtWidgets.QLabel(self.frame_2)
+        self.bienvenido_3.setGeometry(QtCore.QRect(50, 130, 141, 29))
         font = QtGui.QFont()
-        font.setFamily("Neue Haas Grotesk Text Pro Medi")
-        font.setPointSize(10)
-        font.setBold(False)
+        font.setFamily("Century Gothic")
+        font.setPointSize(12)
+        font.setBold(True)
         font.setItalic(False)
-        font.setWeight(7)
-        self.bienvenido.setFont(font)
-        self.bienvenido.setStyleSheet("QFrame{\n"
-"font: 57 10pt \"Neue Haas Grotesk Text Pro Medi\";\n"
+        font.setWeight(75)
+        self.bienvenido_3.setFont(font)
+        self.bienvenido_3.setStyleSheet("QFrame{\n"
+"    font: bold 12pt \"Century Gothic\";\n"
 "}")
-        self.bienvenido.setObjectName("bienvenido")
-        self.horizontalLayout.addWidget(self.bienvenido)
-        self.nombreUsuario = QtWidgets.QLabel(self.framebienvenido)
+        self.bienvenido_3.setObjectName("bienvenido_3")
+        self.bienvenido_4 = QtWidgets.QLabel(self.frame_2)
+        self.bienvenido_4.setGeometry(QtCore.QRect(360, 130, 231, 29))
         font = QtGui.QFont()
-        font.setFamily("Nirmala UI")
-        font.setPointSize(11)
-        self.nombreUsuario.setFont(font)
-        self.nombreUsuario.setObjectName("nombreUsuario")
-        self.horizontalLayout.addWidget(self.nombreUsuario)
+        font.setFamily("Century Gothic")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.bienvenido_4.setFont(font)
+        self.bienvenido_4.setStyleSheet("QFrame{\n"
+"    font: bold 12pt \"Century Gothic\";\n"
+"}")
+        self.bienvenido_4.setObjectName("bienvenido_4")
+        self.bienvenido_5 = QtWidgets.QLabel(self.frame_2)
+        self.bienvenido_5.setGeometry(QtCore.QRect(60, 290, 161, 29))
+        font = QtGui.QFont()
+        font.setFamily("Century Gothic")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(75)
+        self.bienvenido_5.setFont(font)
+        self.bienvenido_5.setStyleSheet("QFrame{\n"
+"    font: bold 12pt \"Century Gothic\";\n"
+"}")
+        self.bienvenido_5.setObjectName("bienvenido_5")
+        self.comboBox = QtWidgets.QComboBox(self.frame_2)
+        self.comboBox.setGeometry(QtCore.QRect(230, 290, 221, 25))
+        self.comboBox.setStyleSheet("QComboBox{\n"
+"font:  bold 10pt \"Century Gothic\";\n"
+"background-color: rgb(241, 243, 244);\n"
+"text-align: center;\n"
+"\n"
+"}")
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.guardarmodeloBoton_2.raise_()
+        self.saldoframe.raise_()
+        self.frame_5.raise_()
+        self.framebienvenido.raise_()
+        self.frame_4.raise_()
+        self.bienvenido_3.raise_()
+        self.bienvenido_4.raise_()
+        self.bienvenido_5.raise_()
+        self.comboBox.raise_()
         self.stackedWidget.addWidget(self.equipo_page)
         self.predicciones_page = QtWidgets.QWidget()
+        self.predicciones_page.setStyleSheet("Qframe{\n"
+"    background-color: rgb(255, 255, 255);\n"
+"\n"
+"\n"
+"}")
         self.predicciones_page.setObjectName("predicciones_page")
-        self.frame_8 = QtWidgets.QFrame(self.predicciones_page)
-        self.frame_8.setGeometry(QtCore.QRect(370, 180, 341, 81))
-        self.frame_8.setStyleSheet("QFrame{\n"
+        self.recomendacioframe = QtWidgets.QFrame(self.predicciones_page)
+        self.recomendacioframe.setGeometry(QtCore.QRect(350, 180, 371, 241))
+        self.recomendacioframe.setStyleSheet("QFrame{\n"
 "border: 0.5px solid #000000;\n"
 "border-radius: 5px;\n"
 "\n"
@@ -174,12 +283,12 @@ class Ui_MainWindow(object):
 "\n"
 " QFrame {\n"
 " box-shadow: 5px 5px 5px 5px #888888;}")
-        self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_8.setObjectName("frame_8")
-        self.frame_7 = QtWidgets.QFrame(self.predicciones_page)
-        self.frame_7.setGeometry(QtCore.QRect(80, 180, 271, 81))
-        self.frame_7.setStyleSheet("QFrame{\n"
+        self.recomendacioframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.recomendacioframe.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.recomendacioframe.setObjectName("recomendacioframe")
+        self.mercadoframe = QtWidgets.QFrame(self.predicciones_page)
+        self.mercadoframe.setGeometry(QtCore.QRect(30, 180, 281, 461))
+        self.mercadoframe.setStyleSheet("QFrame{\n"
 "border: 0.5px solid #000000;\n"
 "border-radius: 5px;\n"
 "\n"
@@ -204,41 +313,83 @@ class Ui_MainWindow(object):
 "\n"
 " QFrame {\n"
 " box-shadow: 5px 5px 5px 5px #888888;}")
-        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_7.setObjectName("frame_7")
+        self.mercadoframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.mercadoframe.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.mercadoframe.setObjectName("mercadoframe")
         self.framebienvenido_2 = QtWidgets.QFrame(self.predicciones_page)
-        self.framebienvenido_2.setGeometry(QtCore.QRect(250, 70, 208, 49))
+        self.framebienvenido_2.setGeometry(QtCore.QRect(30, 30, 711, 61))
+        self.framebienvenido_2.setStyleSheet("background-color: rgb(225, 233, 243);")
         self.framebienvenido_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.framebienvenido_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.framebienvenido_2.setObjectName("framebienvenido_2")
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.framebienvenido_2)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.bienvenido_3 = QtWidgets.QLabel(self.framebienvenido_2)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.framebienvenido_2)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.bienvenido_2 = QtWidgets.QLabel(self.framebienvenido_2)
         font = QtGui.QFont()
-        font.setFamily("Neue Haas Grotesk Text Pro Medi")
-        font.setPointSize(10)
-        font.setBold(False)
+        font.setFamily("Century Gothic")
+        font.setPointSize(18)
+        font.setBold(True)
         font.setItalic(False)
-        font.setWeight(7)
-        self.bienvenido_3.setFont(font)
-        self.bienvenido_3.setStyleSheet("QFrame{\n"
-"font: 57 10pt \"Neue Haas Grotesk Text Pro Medi\";\n"
+        font.setWeight(75)
+        self.bienvenido_2.setFont(font)
+        self.bienvenido_2.setStyleSheet("QFrame{\n"
+"    font: bold 18pt \"Century Gothic\";\n"
 "}")
-        self.bienvenido_3.setObjectName("bienvenido_3")
-        self.horizontalLayout_3.addWidget(self.bienvenido_3)
-        self.nombreUsuario_3 = QtWidgets.QLabel(self.framebienvenido_2)
-        font = QtGui.QFont()
-        font.setFamily("Nirmala UI")
-        font.setPointSize(11)
-        self.nombreUsuario_3.setFont(font)
-        self.nombreUsuario_3.setObjectName("nombreUsuario_3")
-        self.horizontalLayout_3.addWidget(self.nombreUsuario_3)
-        self.frame_6 = QtWidgets.QFrame(self.predicciones_page)
-        self.frame_6.setGeometry(QtCore.QRect(70, 310, 651, 261))
-        self.frame_6.setStyleSheet("QFrame{\n"
+        self.bienvenido_2.setObjectName("bienvenido_2")
+        self.horizontalLayout_2.addWidget(self.bienvenido_2)
+        self.frame = QtWidgets.QFrame(self.predicciones_page)
+        self.frame.setGeometry(QtCore.QRect(-10, 10, 781, 701))
+        self.frame.setStyleSheet("background-color: rgb(225, 233, 243);")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.scaperboton = QtWidgets.QPushButton(self.frame)
+        self.scaperboton.setGeometry(QtCore.QRect(40, 120, 281, 31))
+        self.scaperboton.setStyleSheet("QPushButton{\n"
+"font: bold 11pt  \"Century Gothic\";\n"
+"    background-color: rgb(241, 243, 244);\n"
+"\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton:hover{    \n"
+"background-color: rgb(184, 191, 199);\n"
+"}")
+        self.scaperboton.setObjectName("scaperboton")
+        self.algoritmobox = QtWidgets.QComboBox(self.frame)
+        self.algoritmobox.setGeometry(QtCore.QRect(360, 120, 361, 31))
+        self.algoritmobox.setStyleSheet("QComboBox{\n"
+"font:  bold 10pt \"Century Gothic\";\n"
+"background-color: rgb(241, 243, 244);\n"
+"\n"
+"}")
+        self.algoritmobox.setObjectName("algoritmobox")
+        self.algoritmobox.addItem("")
+        self.algoritmobox.addItem("")
+        self.algoritmobox.addItem("")
+        self.guardarmodeloBoton = QtWidgets.QPushButton(self.frame)
+        self.guardarmodeloBoton.setGeometry(QtCore.QRect(340, 500, 141, 31))
+        self.guardarmodeloBoton.setStyleSheet("QPushButton{\n"
+"font:  bold 10pt \"Century Gothic\";\n"
+"background-color: rgb(241, 243, 244);\n"
+"\n"
+"}\n"
+"QPushButton:hover{    \n"
+"background-color: rgb(184, 191, 199);\n"
+"}\n"
+"")
+        self.guardarmodeloBoton.setObjectName("guardarmodeloBoton")
+        self.line = QtWidgets.QFrame(self.frame)
+        self.line.setGeometry(QtCore.QRect(350, 440, 381, 16))
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.modeloframe = QtWidgets.QFrame(self.frame)
+        self.modeloframe.setGeometry(QtCore.QRect(490, 470, 241, 91))
+        self.modeloframe.setStyleSheet("QFrame{\n"
 "border: 0.5px solid #000000;\n"
 "border-radius: 5px;\n"
+"background-color: rgb(255, 255, 255);\n"
 "\n"
 "\n"
 "}\n"
@@ -260,12 +411,14 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 " QFrame {\n"
-" box-shadow: 5px 5px 5px 5px #888888;\n"
-"\n"
-"}")
-        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_6.setObjectName("frame_6")
+" box-shadow: 5px 5px 5px 5px #888888;}")
+        self.modeloframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.modeloframe.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.modeloframe.setObjectName("modeloframe")
+        self.frame.raise_()
+        self.recomendacioframe.raise_()
+        self.mercadoframe.raise_()
+        self.framebienvenido_2.raise_()
         self.stackedWidget.addWidget(self.predicciones_page)
         self.subevntanas = QtWidgets.QFrame(self.centralwidget)
         self.subevntanas.setGeometry(QtCore.QRect(0, 0, 211, 781))
@@ -275,6 +428,8 @@ class Ui_MainWindow(object):
         self.subevntanas.setObjectName("subevntanas")
         self.menu = QtWidgets.QFrame(self.subevntanas)
         self.menu.setGeometry(QtCore.QRect(0, 0, 211, 711))
+        self.menu.setStyleSheet("background-color: #4d82bc;\n"
+"")
         self.menu.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.menu.setFrameShadow(QtWidgets.QFrame.Raised)
         self.menu.setObjectName("menu")
@@ -288,67 +443,74 @@ class Ui_MainWindow(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(self.columnaMenu)
         self.verticalLayout.setObjectName("verticalLayout")
         self.botonequipo = QtWidgets.QPushButton(self.columnaMenu)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.botonequipo.sizePolicy().hasHeightForWidth())
+        self.botonequipo.setSizePolicy(sizePolicy)
         self.botonequipo.setStyleSheet("QPushButton{\n"
-"    font: 57 10pt \"Neue Haas Grotesk Text Pro Medi\";\n"
-"    background-color: rgb(161, 170, 198);\n"
-"    border-radius: 10px;\n"
+"font: bold 11pt  \"Century Gothic\";\n"
+"background-color: rgb(241, 243, 244);\n"
+"}\n"
+"\n"
+"QPushButton:hover{    \n"
+"background-color: #c4dafa;\n"
 "}\n"
 "")
         self.botonequipo.setObjectName("botonequipo")
         self.verticalLayout.addWidget(self.botonequipo)
-        self.botonentrenamiento = QtWidgets.QPushButton(self.columnaMenu)
-        self.botonentrenamiento.setStyleSheet("QPushButton{\n"
-"font: 57 10pt \"Neue Haas Grotesk Text Pro Medi\";\n"
-"background-color: rgb(161, 170, 198);\n"
-"border-radius: 10px;\n"
-"}")
-        self.botonentrenamiento.setObjectName("botonentrenamiento")
-        self.verticalLayout.addWidget(self.botonentrenamiento)
         self.botonpredicciones = QtWidgets.QPushButton(self.columnaMenu)
         self.botonpredicciones.setStyleSheet("QPushButton{\n"
-"font: 57 10pt \"Neue Haas Grotesk Text Pro Medi\";\n"
-"background-color: rgb(161, 170, 198);\n"
-"border-radius: 10px;\n"
-"}")
+"font: bold 11pt  \"Century Gothic\";\n"
+"background-color: rgb(241, 243, 244);\n"
+"}\n"
+"QPushButton:hover{    \n"
+"background-color: #c4dafa;\n"
+"}\n"
+"")
         self.botonpredicciones.setObjectName("botonpredicciones")
         self.verticalLayout.addWidget(self.botonpredicciones)
         self.framesuperior = QtWidgets.QFrame(self.menu)
         self.framesuperior.setGeometry(QtCore.QRect(10, 30, 201, 181))
-        self.framesuperior.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.framesuperior.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.framesuperior.setFrameShadow(QtWidgets.QFrame.Raised)
         self.framesuperior.setObjectName("framesuperior")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.framesuperior)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.frametitulo = QtWidgets.QFrame(self.framesuperior)
-        self.frametitulo.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frametitulo.setStyleSheet("background-color: transparent;")
+        self.frametitulo.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frametitulo.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frametitulo.setObjectName("frametitulo")
         self.titulo = QtWidgets.QLabel(self.frametitulo)
-        self.titulo.setGeometry(QtCore.QRect(0, 20, 191, 31))
+        self.titulo.setGeometry(QtCore.QRect(0, -10, 201, 51))
         self.titulo.setMinimumSize(QtCore.QSize(191, 0))
         font = QtGui.QFont()
-        font.setFamily("Neue Haas Grotesk Text Pro Medi")
-        font.setPointSize(10)
-        font.setBold(False)
+        font.setFamily("Century Gothic")
+        font.setPointSize(9)
+        font.setBold(True)
         font.setItalic(False)
-        font.setWeight(7)
+        font.setWeight(75)
         self.titulo.setFont(font)
         self.titulo.setStyleSheet("QFrame{\n"
-"font: 57 10pt \"Neue Haas Grotesk Text Pro Medi\";\n"
+"font:  bold 9pt \"Century Gothic\";\n"
+"color: rgb(255, 255, 255);\n"
 "}")
         self.titulo.setObjectName("titulo")
-        self.verticalLayout_2.addWidget(self.frametitulo)
-        self.framelogo = QtWidgets.QFrame(self.framesuperior)
-        self.framelogo.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.framelogo = QtWidgets.QFrame(self.frametitulo)
+        self.framelogo.setGeometry(QtCore.QRect(0, 50, 179, 76))
+        self.framelogo.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.framelogo.setFrameShadow(QtWidgets.QFrame.Raised)
         self.framelogo.setObjectName("framelogo")
         self.logo = QtWidgets.QLabel(self.framelogo)
-        self.logo.setGeometry(QtCore.QRect(40, 0, 91, 81))
+        self.logo.setGeometry(QtCore.QRect(50, 0, 81, 81))
+        self.logo.setStyleSheet("image: url(:/logo_dla.qrc/interfaz/logo_dla-removebg-preview (3).png);\n"
+"background-color: transparent;")
         self.logo.setText("")
-        self.logo.setPixmap(QtGui.QPixmap(":/lodo_dla/foto/logo_dla-removebg-preview (3).png"))
+        self.logo.setPixmap(QtGui.QPixmap("logo_dla-removebg-preview (3).png"))
         self.logo.setScaledContents(True)
         self.logo.setObjectName("logo")
-        self.verticalLayout_2.addWidget(self.framelogo)
+        self.verticalLayout_2.addWidget(self.frametitulo)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -357,12 +519,25 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.guardarmodeloBoton_2.setText(_translate("MainWindow", "Guardar Modelo"))
+        self.avscoretext.setText(_translate("MainWindow", "TextLabel"))
+        self.saldotext.setText(_translate("MainWindow", "TextLabel"))
         self.bienvenido.setText(_translate("MainWindow", "Bienvenido/a, "))
         self.nombreUsuario.setText(_translate("MainWindow", "TextLabel"))
-        self.bienvenido_3.setText(_translate("MainWindow", "Bienvenido/a, "))
-        self.nombreUsuario_3.setText(_translate("MainWindow", "TextLabel"))
+        self.bienvenido_3.setText(_translate("MainWindow", "Presupuesto "))
+        self.bienvenido_4.setText(_translate("MainWindow", "Puntuación Media"))
+        self.bienvenido_5.setText(_translate("MainWindow", "Tus jugadores"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "Equipo"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "Porteros"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "Defensas"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "Mediocentros"))
+        self.comboBox.setItemText(4, _translate("MainWindow", "Delanteros"))
+        self.bienvenido_2.setText(_translate("MainWindow", "Consigue los mejores jugadores para tu equipo"))
+        self.scaperboton.setText(_translate("MainWindow", "Cargar jugadores del mercado"))
+        self.algoritmobox.setItemText(0, _translate("MainWindow", "Algoritmo 1"))
+        self.algoritmobox.setItemText(1, _translate("MainWindow", "Algoritmo 2"))
+        self.algoritmobox.setItemText(2, _translate("MainWindow", "Algoritmo 3"))
+        self.guardarmodeloBoton.setText(_translate("MainWindow", "Guardar Modelo"))
         self.botonequipo.setText(_translate("MainWindow", "TU EQUIPO"))
-        self.botonentrenamiento.setText(_translate("MainWindow", "ENTRENAMIENTO"))
         self.botonpredicciones.setText(_translate("MainWindow", "PREDICCIONES"))
         self.titulo.setText(_translate("MainWindow", "Dream League Assistant"))
-import logo_dla_rc
